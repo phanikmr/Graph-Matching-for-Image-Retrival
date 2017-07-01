@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>82d08108-8ed1-4804-bd7b-0fe605f7aeeb</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>GraphMatching</Name>
+    <RootNamespace>GraphMatching</RootNamespace>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|2.7|x64" />
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\" />
+    <Folder Include="Images\batch\" />
+    <Folder Include="Images\models\" />
+    <Folder Include="Images\queries\" />
+    <Folder Include="Images\test1\" />
+    <Folder Include="Images\test2\" />
+    <Folder Include="Images\test\" />
+    <Folder Include="imgutils\" />
+    <Folder Include="graphs\" />
+    <Folder Include="data\" />
+    <Folder Include="patterns\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\batch\model1.png" />
+    <Content Include="Images\batch\model2.png" />
+    <Content Include="Images\batch\model4.png" />
+    <Content Include="Images\batch\model7.png" />
+    <Content Include="Images\models\model1.png" />
+    <Content Include="Images\models\model2.png" />
+    <Content Include="Images\models\model3.png" />
+    <Content Include="Images\models\model4.png" />
+    <Content Include="Images\queries\0.png" />
+    <Content Include="Images\queries\1.png" />
+    <Content Include="Images\queries\10.png" />
+    <Content Include="Images\queries\11.png" />
+    <Content Include="Images\queries\12.png" />
+    <Content Include="Images\queries\2.png" />
+    <Content Include="Images\queries\3.png" />
+    <Content Include="Images\queries\4.png" />
+    <Content Include="Images\queries\5.png" />
+    <Content Include="Images\queries\6.png" />
+    <Content Include="Images\queries\7.png" />
+    <Content Include="Images\queries\8.png" />
+    <Content Include="Images\queries\9.png" />
+    <Content Include="Images\test1\model1.png" />
+    <Content Include="Images\test1\model2.png" />
+    <Content Include="Images\test1\model4.png" />
+    <Content Include="Images\test1\model7.png" />
+    <Content Include="Images\test2\model5.png" />
+    <Content Include="Images\test2\model6.png" />
+    <Content Include="Images\test2\Original Gray Image.png" />
+    <Content Include="Images\test\20.png" />
+    <Content Include="Images\test\circle.png" />
+    <Content Include="Images\test\hexagon.png" />
+    <Content Include="Images\test\pentagon.png" />
+    <Content Include="Images\test\rectangle.png" />
+    <Content Include="Images\test\shape1.png" />
+    <Content Include="Images\test\star.png" />
+    <Content Include="Images\test\triangle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="graphs\contours.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="graphs\graph.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="graphs\graphmatch.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="graphs\matcher.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="graphs\tree.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="graphs\node.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="graphs\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="imgutils\bwmorph_thin.py" />
+    <Compile Include="imgutils\corner.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="imgutils\imageselector.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="imgutils\imageview.py" />
+    <Compile Include="imgutils\shapedetector.py" />
+    <Compile Include="imgutils\shapetest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="imgutils\stokewidth.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="imgutils\__init__.py" />
+    <Compile Include="main.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="patterns\affinetest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="patterns\cannytest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="patterns\graphifypattern.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="patterns\patternmatching.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="patterns\pattern.py" />
+    <Compile Include="patterns\point.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="patterns\templatematching.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="patterns\transformations.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="patterns\__init__.py" />
+    <Compile Include="__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
